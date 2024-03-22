@@ -1,0 +1,32 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  --highlight-color: #507dbc;
+  --highlight-text-color: #fff;
+  --secondary-color: #f4f4f7;
+  --medium-color: #e58f65;
+  --error-state: #dc143c;
+  --success-state: #2cc681;
+  --global-animation-duration: 1s;
+  --global-animation-style: ease-in-out;
+  --div-shadow-params: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --global-border-thickness: 1px;
+  --global-border-radius: 5px;
+  --secondary-border-radius: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
