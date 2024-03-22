@@ -1,22 +1,27 @@
-"use client";
-
 import {IssueReopenedIcon, PinIcon} from "@primer/octicons-react";
-import {HeaderContainer, MainNavButtons, StyledButton, StyledHeader, StyledLink} from "./Navbar.styles";
+import {Button, Header, IconButton} from "@primer/react";
+import Link from "next/link";
+
+import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
   return (
-    <HeaderContainer>
-      <StyledHeader>
-        <MainNavButtons>
-          <StyledLink href="/">
-            <StyledButton icon={IssueReopenedIcon} aria-label="Home" />
-          </StyledLink>
-          <StyledLink href="/saved">
-            <StyledButton icon={PinIcon} aria-label="Saved" />
-          </StyledLink>
-        </MainNavButtons>
+    <Header className={styles["header"]}>
+      <div className={styles["header-container"]}>
+        <div className={styles["main-nav-container"]}>
+          <Link href="/" className={styles["link"]}>
+            <Button className={styles["icon"]} aria-label="Home">
+              <IssueReopenedIcon size={15} />
+            </Button>
+          </Link>
+          <Link href="/saved" className={styles["link"]}>
+            <Button className={styles["icon"]} aria-label="Home">
+              <PinIcon size={15} />
+            </Button>
+          </Link>
+        </div>
         <h1>Pictionary</h1>
-      </StyledHeader>
-    </HeaderContainer>
+      </div>
+    </Header>
   );
 };

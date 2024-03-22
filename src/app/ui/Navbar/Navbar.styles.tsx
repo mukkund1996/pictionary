@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  aligh-items: center;
+  align-items: center;
   padding-top: 2rem;
 `;
 
@@ -15,7 +15,7 @@ export const StyledHeader = styled(Header)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  aligh-items: center;
+  align-items: center;
 `;
 
 export const MainNavButtons = styled.div`
