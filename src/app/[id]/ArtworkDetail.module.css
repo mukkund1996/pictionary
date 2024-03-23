@@ -31,3 +31,8 @@
 .artwork {
   border-radius: 5%;
 }
+
+.skeleton {
+  border-radius: 5%;
+  margin: 1.5rem;
+}
