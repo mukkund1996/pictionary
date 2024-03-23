@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["www.artic.edu"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.artic.edu",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   },
   experimental: {
     missingSuspenseWithCSRBailout: false,
