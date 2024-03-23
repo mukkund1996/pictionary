@@ -75,9 +75,12 @@ export const FilterOptions = () => {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleMenuItemClick("publicDomain")}>
+        <MenuItem>
           <FormGroup>
-            <FormControlLabel control={<Checkbox checked={options.publicDomain} />} label="Public Domain" />
+            <FormControlLabel
+              control={<Checkbox onClick={handleMenuItemClick("publicDomain")} checked={options.publicDomain} />}
+              label="Public Domain"
+            />
           </FormGroup>
         </MenuItem>
         {/* <MenuItem onClick={handleMenuItemClick("onView")}>
