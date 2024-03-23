@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Navbar />
         {children}
-        <footer>Copyrights</footer>
+        <footer>© 2024 Mukkund Sunjii</footer>
       </body>
     </html>
   );
