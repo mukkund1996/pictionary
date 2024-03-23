@@ -1,4 +1,3 @@
-import RefreshIcon from "@mui/icons-material/Refresh";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import {IconButton} from "@mui/material";
 import Link from "next/link";
@@ -6,6 +5,7 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 import {FilterOptions} from "../Filter/Filter";
 import {SearchBar} from "../SearchBar/SearchBar";
+import HomeIcon from "@mui/icons-material/Home";
 
 export const Navbar = () => {
   return (
@@ -14,7 +14,7 @@ export const Navbar = () => {
         <div className={styles["main-nav-container"]}>
           <Link href="/" className={styles["link"]}>
             <IconButton className={styles["icon"]} aria-label="Home">
-              <RefreshIcon />
+              <HomeIcon />
             </IconButton>
           </Link>
           <Link href="/saved" className={styles["link"]}>
@@ -27,7 +27,6 @@ export const Navbar = () => {
           <FilterOptions />
           <SearchBar />
         </div>
-        <h1>Pictionary</h1>
       </div>
     </header>
   );

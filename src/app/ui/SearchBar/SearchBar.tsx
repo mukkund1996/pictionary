@@ -31,7 +31,7 @@ export const SearchBar = () => {
   };
 
   return (
-    <div className={styles["search-bar-container"]}>
+    <div>
       <TextField
         onChange={e => {
           setSearchTerm(e.target.value);
@@ -42,7 +42,7 @@ export const SearchBar = () => {
         InputProps={{
           endAdornment: !searched ? (
             <IconButton
-              className={navStyles["icon"]}
+              className={styles["icon"]}
               onClick={() => {
                 navigateToPage(searchTerm);
                 setSearched(true);
@@ -52,7 +52,7 @@ export const SearchBar = () => {
             </IconButton>
           ) : (
             <IconButton
-              className={navStyles["icon"]}
+              className={styles["icon"]}
               onClick={() => {
                 resetPage();
                 setSearchTerm("");

@@ -1,6 +1,6 @@
 "use client";
 
-import {useCallback, useEffect, useState} from "react";
+import {useCallback, useState} from "react";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import {IconButton} from "@mui/material";
 import Menu from "@mui/material/Menu";
@@ -58,7 +58,12 @@ export const FilterOptions = () => {
 
   return (
     <div className={navBarStyles["link"]}>
-      <IconButton onClick={handleClick} className={navBarStyles["icon"]} aria-label="Filter">
+      <IconButton
+        disabled={pathname !== "/"}
+        onClick={handleClick}
+        className={navBarStyles["icon"]}
+        aria-label="Filter"
+      >
         <FilterListIcon />
       </IconButton>
       <Menu

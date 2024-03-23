@@ -1,0 +1,33 @@
+.artwork-detailed-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 45vw;
+  padding: 20px 0;
+}
+
+.artwork-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 0 2rem;
+  text-align: justify;
+}
+
+.artwork-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.artwork-title-container h3 {
+  padding-right: 2rem;
+}
+
+.artwork {
+  border-radius: 5%;
+}

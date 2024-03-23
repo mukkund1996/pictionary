@@ -2,7 +2,7 @@ export interface ArtworkResponse {
   id: number;
   title: string;
   image_id: string;
-  "short-description"?: string;
+  short_description?: string;
 }
 
 export interface ArtworkGridResponse {

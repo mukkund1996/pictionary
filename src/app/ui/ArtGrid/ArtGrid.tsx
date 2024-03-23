@@ -7,7 +7,7 @@ interface ArtGridProps {
   artworkGrid: ArtworkGridResponse;
 }
 
-export const ArtGrid = async ({artworkGrid}: ArtGridProps) => {
+export const ArtGrid = ({artworkGrid}: ArtGridProps) => {
   const artworks = extractImgSrc(artworkGrid, 200);
 
   return (

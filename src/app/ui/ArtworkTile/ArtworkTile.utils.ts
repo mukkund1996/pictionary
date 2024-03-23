@@ -8,6 +8,7 @@ export const extractImgSrc = (artworks: ArtworkGridResponse, size = 843) => {
       id: artwork.image_id,
       width: size,
       height: size,
+      dbId: artwork.id,
     } as ArtworkProps;
   });
 };
