@@ -3,9 +3,9 @@ body,
 #root {
   height: 100%;
   margin: 0;
-  --highlight-color: #507dbc;
-  --highlight-text-color: #fff;
+  --primary-color: #507dbc;
   --secondary-color: #f4f4f7;
+  --highlight-text-color: #fff;
   --medium-color: #e58f65;
   --error-state: #dc143c;
   --success-state: #2cc681;

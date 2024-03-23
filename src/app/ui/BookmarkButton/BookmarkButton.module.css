@@ -1,17 +1,17 @@
 .bookmark-button {
-  background-color: #f4f4f4;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   border: none !important;
 }
 .bookmark-button:hover {
-  background-color: #507dbc;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
 .bookmark-button-clicked {
   border: none !important;
   border-radius: 50%;
-  background-color: #507dbc;
+  background-color: var(--primary-color);
   color: #fff;
 }
 

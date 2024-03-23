@@ -5,11 +5,15 @@
   align-items: center;
 }
 
+.text-area {
+  border-radius: 15%;
+}
+
 .icon {
   background: none;
 }
 
 .icon:hover {
-  background-color: #507dbc;
+  background-color: var(--primary-color);
   color: #fff;
 }

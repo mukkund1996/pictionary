@@ -5,7 +5,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 import IconButton from "@mui/material/Button";
 import styles from "./SearchBar.module.css";
-import navStyles from "../Navbar/Navbar.module.css";
 import {useState} from "react";
 import {usePathname, useRouter, useSearchParams} from "next/navigation";
 
@@ -33,15 +32,17 @@ export const SearchBar = () => {
   return (
     <div>
       <TextField
+        className={styles["text-area"]}
+        disabled={pathname !== "/"}
         onChange={e => {
           setSearchTerm(e.target.value);
         }}
         label="Search artworks"
-        variant="outlined"
         value={searchTerm}
         InputProps={{
           endAdornment: !searched ? (
             <IconButton
+              disabled={pathname !== "/"}
               className={styles["icon"]}
               onClick={() => {
                 navigateToPage(searchTerm);
@@ -52,6 +53,7 @@ export const SearchBar = () => {
             </IconButton>
           ) : (
             <IconButton
+              disabled={pathname !== "/"}
               className={styles["icon"]}
               onClick={() => {
                 resetPage();

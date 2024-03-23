@@ -33,12 +33,12 @@
 }
 
 .icon {
-  background-color: #f4f4f4;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   border: none !important;
 }
 
 .icon:hover {
-  background-color: #507dbc;
+  background-color: var(--primary-color);
   color: #fff;
 }
