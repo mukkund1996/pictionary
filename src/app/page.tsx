@@ -34,7 +34,7 @@ export default async function Home({
         </div>
       )}
       <ArtGrid artworkGrid={artworkGrid} />
-      <StyledPagination totalPages={artworkGrid.pagination.total} />
+      <StyledPagination page={currentPage} totalPages={artworkGrid.pagination.total} />
     </main>
   );
 }

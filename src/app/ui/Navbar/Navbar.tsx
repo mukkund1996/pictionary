@@ -12,7 +12,7 @@ export const Navbar = () => {
     <header className={styles["header"]}>
       <div className={styles["header-container"]}>
         <div className={styles["main-nav-container"]}>
-          <Link href="/" className={styles["link"]}>
+          <Link href="/?page=1" className={styles["link"]}>
             <IconButton className={styles["icon"]} aria-label="Home">
               <HomeIcon />
             </IconButton>

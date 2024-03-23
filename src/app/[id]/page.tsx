@@ -1,10 +1,7 @@
 import Image from "next/image";
 import {constructImgSrc} from "../lib/utils/helpers";
 import {fetchArtwork} from "../lib/api/fetchArtworks";
-import {IconButton} from "@mui/material";
-import StarBorderPurple500Icon from "@mui/icons-material/StarBorderPurple500";
 import styles from "./ArtworkDetail.module.css";
-import navStyles from "../ui/Navbar/Navbar.module.css";
 import {DETAILED_IMAGE_SIZE} from "../lib/constants/api";
 import {BookmarkButton} from "../ui/BookmarkButton/BookmarkButton";
 

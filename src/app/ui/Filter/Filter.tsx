@@ -80,11 +80,11 @@ export const FilterOptions = () => {
             <FormControlLabel control={<Checkbox checked={options.publicDomain} />} label="Public Domain" />
           </FormGroup>
         </MenuItem>
-        <MenuItem onClick={handleMenuItemClick("onView")}>
+        {/* <MenuItem onClick={handleMenuItemClick("onView")}>
           <FormGroup>
             <FormControlLabel control={<Checkbox checked={options.onView} />} label="On View" />
           </FormGroup>
-        </MenuItem>
+        </MenuItem> */}
       </Menu>
     </div>
   );
