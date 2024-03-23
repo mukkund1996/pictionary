@@ -1,7 +1,7 @@
 "use client";
 
 import {Pagination} from "@mui/material";
-import {usePathname} from "next/navigation";
+import {usePathname, useSearchParams} from "next/navigation";
 import {useRouter} from "next/navigation";
 import {useState} from "react";
 import styles from "./Pagination.module.css";
@@ -13,7 +13,7 @@ interface PaginationProps {
 export const StyledPagination = ({totalPages}: PaginationProps) => {
   const {replace} = useRouter();
   const pathname = usePathname();
-  const searchParams = new URLSearchParams();
+  const searchParams = useSearchParams();
   const [currentPage, setCurrentPage] = useState(Number(searchParams.get("page")) ?? 1);
 
   const navigateToPage = (page: number) => {

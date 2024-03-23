@@ -4,6 +4,8 @@ import {IconButton} from "@mui/material";
 import Link from "next/link";
 
 import styles from "./Navbar.module.css";
+import {FilterOptions} from "../Filter/Filter";
+import {SearchBar} from "../SearchBar/SearchBar";
 
 export const Navbar = () => {
   return (
@@ -16,10 +18,14 @@ export const Navbar = () => {
             </IconButton>
           </Link>
           <Link href="/saved" className={styles["link"]}>
-            <IconButton className={styles["icon"]} aria-label="Home">
+            <IconButton className={styles["icon"]} aria-label="Saved">
               <BookmarkIcon />
             </IconButton>
           </Link>
+        </div>
+        <div className={styles["options-nav-container"]}>
+          <FilterOptions />
+          <SearchBar />
         </div>
         <h1>Pictionary</h1>
       </div>
